@@ -1,4 +1,12 @@
 .conteiner {
-    display:flex
-    
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+
+}
+
+.item{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
