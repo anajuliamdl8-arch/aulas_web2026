@@ -1,0 +1,53 @@
+body{
+    background: url(../imagem/cinema.png);
+    background-repeat: repeat;
+    background-size: 450px;
+    background-position: center;
+}
+
+
+
+
+/*header{
+    display: grid;
+    grid-template-columns:repeat (12, 1fr);
+    background: linear-gradient(135deg);
+}
+*/
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+}
+
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    grid-column: span 4;
+
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    margin: 10px;
+    padding: 10px;
+}
+
+.texto{
+    background-color: white;
+    border-radius: 15px;
+    grid-column: span 8;
+}
