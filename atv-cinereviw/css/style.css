@@ -2,11 +2,15 @@ body{
     /*background-color: rgb(221, 30, 30);
     background: url(../imagem/cinema.png);
     background-blend-mode:multiply;*/
-    background: rgb(65, 93, 107)  url(../imagem/cinema.png);
+    background: rgb(246, 249, 250)  url(../imagem/cinema.png);
     background-repeat: repeat;
     background-size: 450px;
     background-position: center;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     
 }
 
@@ -37,6 +41,8 @@ section{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 15px;
+    flex: 1;
+    margin: 15px;
 }
 
 
