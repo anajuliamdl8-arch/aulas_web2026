@@ -1,0 +1,108 @@
+body{
+    /*background-color: rgb(221, 30, 30);
+    background: url(../imagem/cinema.png);
+    background-blend-mode:multiply;*/
+    background: rgb(246, 249, 250)  url(../imagem/cinema.png);
+    background-repeat: repeat;
+    background-size: 450px;
+    background-position: center;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+
+
+/*header*/
+header{
+    background-image: linear-gradient(to right,rgb(25, 182, 255), rgb(133, 216, 255)   );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.cine{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+/*conteudo*/
+section{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    flex: 1;
+    margin: 15px;
+}
+
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    grid-column: span 4;
+    display: flex;
+    background-size: cover;
+    justify-content:center;
+    align-items: center;
+}
+
+img{
+    width: 90%;
+    height:90%;
+    object-fit: cover;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.conteudo{
+    width: 90%;
+    height:90%;
+    object-fit: cover;
+    margin: 10px;
+    padding: 10px;
+}
+
+.texto{
+    background-color: white;
+    border-radius: 15px;
+    grid-column: span 8;
+    display: flex;
+    flex-direction: column;
+
+
+    
+}
+
+
+
+
+
+
+
+/*footer*/
+
+.footer{
+    bottom: 0;
+    left: 0;
+}
+
+footer{
+    background-color: rgb(255, 223, 80);
+    display:flex;
+    justify-content: center;
+    border-radius: 15px;
+    bottom: 0;
+    left: 0;
+
+}
