@@ -1,0 +1,18 @@
+body{
+    background: rgb(246, 249, 250)  url(../image/agendea.jpg);
+    background-repeat: repeat;
+    
+    
+    
+}
+
+ul{
+
+    display: flex;
+    background-color: rgb(255, 255, 240);
+    flex-align: center;
+    height: 600px;
+
+
+}
+

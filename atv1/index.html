@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <header class="p-3 mb-2 bg-success-subtle text-success-emphasis rounded-5 rounded-top-0 "  >
+         <h1 class="d-flex justify-content-center" >lista por prioridades</h1>
+    </header>
+
+    <input type="text" id="oque"/>
+    <select id="priori" onselect="cor()">
+        <option>prioridade alta</option>
+        <option>prioridade baixa</option>
+    </select>
+
+    <button onclick="botão()" class="btn btn-danger shadow " id="butao">ok</button>
+    <div   class="container" >
+        <ul id="lista" class="row aling-items start" ></ul>
+    </div>
+
+    <script>
+        function botão(){
+            let oque = document.getElementById("oque").value;
+            let priori = document.getElementById("priori").value;
+            let p = document.createElement("li");
+            if (priori=="prioridade alta"){
+                p.innerText=oque;
+                p.style.color = "red";
+                p.classList.add("col");
+            }
+            else{
+                p.innerText=oque;
+                p.style.color = "green";
+                p.classList.add("col");
+            }
+
+            let ul = document.getElementById("lista");
+
+            ul.appendChild(p);
+
+        }
+
+    
+        function cor(){
+            let opcao = document.getElementById("priori").value;
+            let butao = document.getElementById("butao");
+
+            if (priori=="prioridade alta"){
+                butao.style.color="red";
+                
+            }
+            else{
+                butao.style.color="green";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
